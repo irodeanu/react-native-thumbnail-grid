@@ -28,7 +28,7 @@ class PhotoGrid extends PureComponent {
   }
 
   handlePressImage = (event, { image, index }, secondViewImages) =>
-    this.props.onPressImage(event, image, {
+    this.props.onPressImage(index, image, {
       isLastImage: index && this.isLastImage(index, secondViewImages),
     })
 
